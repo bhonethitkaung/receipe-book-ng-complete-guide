@@ -1,0 +1,38 @@
+<app-header></app-header>
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <!-- <app-receipes *ngIf="loadedFeature == 'receipe'"></app-receipes>
+            <app-shopping-list *ngIf="loadedFeature != 'receipe'"></app-shopping-list> -->
+            <router-outlet></router-outlet>
+        </div>
+    </div>
+
+    <!-- custom attribute directive test -->
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <p [appBetterHighlight]="'red'" defaultColor="yellow">Style me with better directive!</p>
+        </div>
+    </div> -->
+
+    <!-- custom structural directive test -->
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <div *appUnless="!directiveTest">
+                <p>This is true</p>
+            </div>
+        </div>
+    </div> -->
+
+    <!-- ngSwitch test -->
+    <!-- <div class="row">
+        <div class="col-md-12">
+            <div [ngSwitch]="value">
+                <p *ngSwitchCase="5">Value is 5</p>
+                <p *ngSwitchCase="10">Value is 10</p>
+                <p *ngSwitchCase="100">Value is 100</p>
+                <p *ngSwitchDefault>Value is default</p>
+            </div>
+        </div>
+    </div> -->
+</div>
